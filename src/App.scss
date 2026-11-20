@@ -1,0 +1,24 @@
+$primary: #ff2d95;
+$secondary: #00c2ff;
+$border-radius: 1rem;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+  background: linear-gradient(135deg, #2b0a5e, #ff2d95);
+  min-height: 100vh;
+}
+
+.card {
+  border: none;
+  border-top: 12px solid $primary;
+  transition: transform 0.25s;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+
+  .card-title {
+    color: $primary;
+  }
+}
